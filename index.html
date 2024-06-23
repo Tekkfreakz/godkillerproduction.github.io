@@ -3,41 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Musik auf Spotify</title>
+    <title>Mein SCUM Server</title>
     <style>
         /* Globale Stile */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1f1f1f;
+            background: url('https://cdn.discordapp.com/attachments/988202225186799666/1254472721925013535/thumb-1920-1202628.jpg?ex=66799e43&is=66784cc3&hm=3566664d79368beb58e085d7e84bce097876658b0886604024ae716c63a2087c&') no-repeat center center fixed;
+            background-size: cover;
             color: #ffffff;
         }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
+            text-align: center;
         }
         header {
-            background-color: #333333;
+            background-color: rgba(51, 51, 51, 0.8); /* Halbtransparenter Hintergrund */
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 700px; /* Angepasste Größe */
+            height: auto;
         }
         main {
-            padding: 20px 0;
+            text-align: left;
+            background-color: rgba(51, 51, 51, 0.8); /* Halbtransparenter Hintergrund */
+            padding: 20px;
+            border-radius: 8px;
         }
-        .spotify-player {
-            text-align: center;
-            margin-top: 20px;
-            border-radius: 12px;
-            overflow: hidden;
+        .instructions {
+            background-color: #444444;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions ol li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .battlemetrics-widget {
+            margin-bottom: 20px;
         }
         footer {
-            background-color: #333333;
+            background-color: rgba(51, 51, 51, 0.8); /* Halbtransparenter Hintergrund */
             color: #ffffff;
             text-align: center;
             padding: 10px 0;
@@ -50,20 +73,34 @@
 <body>
     <header>
         <div class="container">
-            <h1>Meine Musik auf Spotify</h1>
+            <h1>Willkommen auf meinem SCUM Server</h1>
         </div>
     </header>
+    <div class="container">
+        <img src="https://cdn.discordapp.com/attachments/988202225186799666/1254471088734339173/GODKILLER.png?ex=66799cbe&is=66784b3e&hm=90f4fbd8581b340dd1b34034c59af04ecb2d6285a6a1d34dc90df67ea379e928&" alt="Logo" class="logo">
+    </div>
     <main>
+        <div class="container battlemetrics-widget">
+            <iframe src="https://cdn.battlemetrics.com/b/horizontal500x80px/27860019.html?foreground=%23EEEEEE&background=%23222222&lines=%23333333&linkColor=%231185ec&chartColor=%23FF0700" frameborder="0" style="border:0; width: 100%; height: 80px;" name="jfgsx"></iframe>
+        </div>
         <div class="container">
-            <div class="spotify-player">
-                <iframe src="https://open.spotify.com/embed/artist/6rTkKJLsyehMCFAdLfL8RR?utm_source=generator&theme=0" width="100%" height="752" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="instructions">
+                <h2>Anleitung zum Beitreten:</h2>
+                <ol>
+                    <li>Öffne Steam auf deinem Computer.</li>
+                    <li>Gehe zu deiner Bibliothek und suche nach SCUM.</li>
+                    <li>Klicke auf "Spielen", um SCUM zu starten.</li>
+                    <li>Verwende in SCUM die Server-IP und den Port, um meinem Server beizutreten.</li>
+                </ol>
             </div>
+            <p>Vielen Dank für deine Teilnahme!</p>
         </div>
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Meine Musik auf Spotify. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2024 Mein SCUM Server. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+
 </body>
 </html>
