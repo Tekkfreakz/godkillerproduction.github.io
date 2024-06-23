@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
+    <style>
+        /* Globale Stile */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 8px 8px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Willkommen auf meiner Webseite</h1>
-    <p>Dies ist eine einfache HTML-Seite, die mit meiner Domain verbunden ist.</p>
+    <div class="container">
+        <header>
+            <h1>Willkommen auf meiner Webseite</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Über uns</a>
+            <a href="#">Dienstleistungen</a>
+            <a href="#">Kontakt</a>
+        </nav>
+        <section>
+            <h2>Über uns</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu tellus et magna ullamcorper fringilla. Vestibulum nec lorem quis nisi fermentum interdum.</p>
+        </section>
+        <section>
+            <h2>Unsere Dienstleistungen</h2>
+            <ul>
+                <li>Webdesign</li>
+                <li>Responsive Webentwicklung</li>
+                <li>SEO-Optimierung</li>
+                <li>Hosting</li>
+            </ul>
+        </section>
+        <footer>
+            <p>&copy; 2024 Meine Webseite. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
 </body>
 </html>
