@@ -3,86 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Musikseite</title>
+    <title>Meine Musik auf Spotify</title>
     <style>
         /* Globale Stile */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            background-color: #1f1f1f;
+            color: #ffffff;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #333333;
+            color: #ffffff;
             padding: 10px 0;
             text-align: center;
         }
         header h1 {
-            font-size: 2.5em;
-            margin: 0;
-            text-transform: uppercase;
-        }
-        nav {
-            margin-top: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #ffc107;
-        }
-        .showcase {
-            background: url('background.jpg') no-repeat center center;
-            background-size: cover;
-            text-align: center;
-            color: #fff;
-            padding: 100px 0;
-        }
-        .showcase h1 {
-            font-size: 3em;
             margin: 0;
         }
-        .showcase p {
-            font-size: 1.5em;
-            color: #ccc;
+        main {
+            padding: 20px 0;
+        }
+        .spotify-player {
+            text-align: center;
             margin-top: 20px;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 40px;
-        }
-        .content .main-content {
-            flex: 2;
-            padding-right: 20px;
-        }
-        .content .sidebar {
-            flex: 1;
-            background-color: #eee;
-            padding: 20px;
+            border-radius: 12px;
+            overflow: hidden;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #333333;
+            color: #ffffff;
             text-align: center;
             padding: 10px 0;
             position: fixed;
@@ -94,46 +50,19 @@
 <body>
     <header>
         <div class="container">
-            <h1>Meine Musikseite</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Startseite</a></li>
-                    <li><a href="#">Über uns</a></li>
-                    <li><a href="#">Künstler</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+            <h1>Meine Musik auf Spotify</h1>
         </div>
     </header>
-
-    <section class="showcase">
+    <main>
         <div class="container">
-            <h1>Willkommen auf unserer Musikseite</h1>
-            <p>Entdecken Sie die Welt der Musik.</p>
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="content">
-            <div class="main-content">
-                <h2>Über uns</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum risus vel felis dictum, at ullamcorper justo sodales. Nulla vel lacus mi. Nullam nec leo et nisi volutpat malesuada at nec lectus. Donec vestibulum dui eu nunc dapibus, at elementum elit scelerisque. Nam vestibulum dictum nisl. Pellentesque ultrices ante id libero fermentum, sit amet lacinia lectus suscipit. Aliquam eleifend urna in sapien tristique, et euismod dui laoreet. Suspendisse potenti. Fusce elementum libero nec urna pellentesque, et hendrerit enim congue. Nullam lobortis felis nec justo dictum, id tincidunt lacus scelerisque. Praesent eleifend, dolor a ultricies sollicitudin, sapien tortor iaculis purus, sed sollicitudin dui metus at velit. Curabitur venenatis leo nec feugiat tempor. Fusce at accumsan dolor, et iaculis nulla.</p>
-            </div>
-            <div class="sidebar">
-                <h2>Neueste Alben</h2>
-                <ul>
-                    <li><a href="#">Album 1</a></li>
-                    <li><a href="#">Album 2</a></li>
-                    <li><a href="#">Album 3</a></li>
-                    <li><a href="#">Alle Alben anzeigen</a></li>
-                </ul>
+            <div class="spotify-player">
+                <iframe src="https://open.spotify.com/embed/artist/6rTkKJLsyehMCFAdLfL8RR?utm_source=generator&theme=0" width="100%" height="752" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
-    </div>
-
+    </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Meine Musikseite. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2024 Meine Musik auf Spotify. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 </body>
